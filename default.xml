@@ -355,7 +355,7 @@
   <project path="frameworks/rs" name="frameworks_rs" remote="rnx" revision="lp-mr1" groups="pdk" />
   <project groups="pdk-cw-fs" name="platform/frameworks/support" path="frameworks/support"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/volley" path="frameworks/volley"/>
-  <project groups="pdk-cw-fs" name="frameworks_webview" remote="rnx" revison="lp-mr1" path="frameworks/webview"/>
+  <project groups="pdk-cw-fs" name="zyonee/android_frameworks_webview" remote="gh" revison="pac-5.1" path="frameworks/webview"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm"/>
   <project groups="pdk" name="platform/hardware/akm" path="hardware/akm"/>
   <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
