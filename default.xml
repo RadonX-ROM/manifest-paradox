@@ -77,7 +77,7 @@
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
   <project groups="pdk" name="platform/art" path="art"/>
-  <project path="bionic" name="bionic" groups="pdk" remote="rnx" revision="lp-mr1" />
+  <project path="bionic" name="platform/bionic"/>
   <project groups="pdk-cw-fs" name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
   <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts"/>
