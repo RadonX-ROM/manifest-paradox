@@ -225,7 +225,7 @@
   <project groups="pdk" name="platform/external/libopus" path="external/libopus"/>
   <project groups="pdk-cw-fs" name="platform/external/libpcap" path="external/libpcap"/>
   <project groups="pdk-cw-fs" name="platform/external/libphonenumber" path="external/libphonenumber"/>
-  <project groups="pdk" name="platform/external/libpng" path="external/libpng"/>
+  <project groups="pdk" name="external_libpng" path="external/libpng" remote="rnx" revision="lp-mr1"/>
   <project groups="pdk-cw-fs" name="platform/external/libseccomp-helper" path="external/libseccomp-helper"/>
   <project groups="pdk" name="platform/external/libselinux" path="external/libselinux"/>
   <project groups="pdk" name="platform/external/libsepol" path="external/libsepol"/>
@@ -524,7 +524,7 @@
 
 <!-- QCOM MSM8974 -->
 
-  <project path="build" name="android_build" remote="par" revision="lollipop_msm8974" groups="pdk,tradefed" >
+  <project path="build" name="build-paradox" remote="rnx" revision="lp-mr1" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -564,7 +564,7 @@
 
 <!-- AOSParadox Vendor -->
 
-  <project path="vendor/aosparadox" name="android_vendor_aosparadox" remote="par" revision="lollipop"/>
+  <project path="vendor/rnx" name="vendor_rnx-paradox" remote="rnx" revision="lollipop"/>
 
 
 <!-- END AOSParadox Stuff -->
