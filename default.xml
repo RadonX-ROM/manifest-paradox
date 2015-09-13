@@ -509,7 +509,7 @@
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
 
-  <project groups="device" name="android_device_oneplus_bacon" path="device/oneplus/bacon" remote="par" revision="lollipop_bacon"/>
+  <project groups="device" name="paradox_device_oneplus_bacon" path="device/oneplus/bacon" remote="rnx" revision="lollipop_bacon"/>
   <project groups="device" name="paradox_kernel_oneplus_msm8974" path="kernel/" remote="rnx" revision="lp-mr1"/>
   <project groups="device" name="proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="par" revision="lollipop_bacon"/>
 
