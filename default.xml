@@ -532,7 +532,7 @@
 
   <project path="frameworks/base" name="paradox_frameworks_base" remote="rnx" revision="lp-mr1" groups="pdk-cw-fs" />
 
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="par" revision="lollipop_msm8974" />
+  <project path="packages/apps/Settings" name="paradox_packages_apps_Settings" remote="rnx" revision="lp-mr1" />
   <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="par" revision="lollipop_msm8974" />
   <project name="android_packages_apps_Mms" path="packages/apps/Mms" remote="par" revision="lollipop_msm8974" />
 
@@ -544,7 +544,7 @@
 
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="par" revision="lollipop_msm8974"/>
 
-  <project path="manifest" name="local_aosparadox" remote="par" revision="lollipop_msm8974"/>
+  <project path="manifest" name="paradox_manifest" remote="rnx" revision="lollipop_bacon"/>
 
 <!-- Busybox -->
 
