@@ -57,23 +57,6 @@
 
   <default remote="caf" revision="LA.BF.1.1.1.c4"/>
   <project groups="pdk-cw-fs" name="device/common"/>
-  <project groups="pdk" name="device/generic/arm64"/>
-  <project groups="pdk" name="device/generic/armv7-a-neon"/>
-  <project groups="pdk" name="device/generic/common"/>
-  <project groups="pdk" name="device/generic/goldfish"/>
-  <project groups="pdk" name="device/generic/mini-emulator-arm64"/>
-  <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon"/>
-  <project groups="pdk" name="device/generic/mini-emulator-mips"/>
-  <project groups="pdk" name="device/generic/mini-emulator-x86"/>
-  <project groups="pdk" name="device/generic/mini-emulator-x86_64"/>
-  <project groups="pdk" name="device/generic/mips"/>
-  <project name="device/generic/qemu"/>
-  <project groups="pdk" name="device/generic/x86"/>
-  <project groups="pdk" name="device/generic/x86_64"/>
-  <project groups="pdk" name="device/google/accessory/arduino"/>
-  <project groups="pdk" name="device/google/accessory/demokit"/>
-  <project groups="pdk" name="device/google/atv"/>
-  <project groups="pdk" name="device/sample"/>
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
   <project groups="pdk" name="platform/art" path="art"/>
@@ -554,9 +537,8 @@
 <!-- Common -->
 
   <project name="android_packages_apps_Browser" path="packages/apps/Browser" remote="par" revision="lollipop_common" />
-  <project name="android_packages_apps_Gallery" path="packages/apps/Gallery" remote="par" revision="lollipop_common" />
-  <project name="android_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="par" revision="lollipop_common" />
-  <project name="android_packages_apps_Music" path="packages/apps/Music" remote="par" revision="lollipop_common" />
+  <project name="SlimRoms/packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="par" revision="lollipop_common" />
 
 <!-- AOSParadox Vendor -->
