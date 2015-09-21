@@ -60,7 +60,6 @@
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
   <project groups="pdk" name="platform/art" path="art"/>
-  <project path="bionic" name="platform/bionic"/>
   <project groups="pdk-cw-fs" name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
   <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts"/>
@@ -522,23 +521,19 @@
 
   <project groups="qcom,default" name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="lollipop_msm8974"/>
   <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="par" revision="lollipop_msm8974"/>
-
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="par" revision="lollipop_msm8974"/>
-
   <project path="manifest" name="paradox_manifest" remote="rnx" revision="lollipop_bacon"/>
-
-<!-- Busybox -->
-
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-12.1" />
 
 <!-- Common -->
 
   <project name="SlimRoms/packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="lp5.1" />
   <project path="packages/apps/Eargasm" name="xboxfanj/Music" remote="github" revision="lollipop-mr1" />
-   <project path="packages/apps/SnapdragonAudio" name="packages_apps_SnapdragonAudio" remote="rnx" revision="lp-mr1" />
+  <project path="packages/apps/SnapdragonAudio" name="packages_apps_SnapdragonAudio" remote="rnx" revision="lp-mr1" />
   <project path="packages/apps/Snap" name="xboxfanj/Snap" remote="github" revision="lollipop-mr1" />
   <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="par" revision="lollipop_common" />
-
+  <project path="bionic" name="paradox_bionic" remote="rnx" revision="lp-mr1"/>
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-12.1" />
+    
 <!-- AOSParadox Vendor -->
 
   <project path="vendor/rnx" name="paradox_vendor_rnx" remote="rnx" revision="lollipop"/>
