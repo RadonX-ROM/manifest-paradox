@@ -399,7 +399,7 @@
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision"/>
   <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService"/>
   <project path="packages/apps/SnapdragonAudio" name="packages_apps_SnapdragonAudio" remote="rnx" revision="lp-mr1" />
-  <project path="packages/apps/SnapdragonCamera" name="packages_apps_SnapdragonCamera" remote="rnx" revision="lp-mr1" />
+  <project path="packages/apps/Snap" name="xboxfanj/Snap" remote="github" revision="lollipop-mr1" />
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts"/>
   <project name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder"/>
   <project name="platform/packages/apps/Stk" path="packages/apps/Stk"/>
