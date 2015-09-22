@@ -79,7 +79,7 @@
   
   <!-- External Libraries -->
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-12.1" />
-  <project path="external/tar" name="external_tar" remote="rnx" revision="lp5.1" />
+  <project path="external/tar" name="external_tar" remote="rnx" revision="L51" />
   <project path="external/bluetooth/bluedroid" name="external_bluetooth_bluedroid" groups="pdk" remote="rnx" revision="lp-mr1" />
 
    <!-- Apps -->
