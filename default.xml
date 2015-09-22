@@ -56,10 +56,63 @@
 	   fetch="https://github.com/TeamHorizon/" />
 
   <default remote="caf" revision="LA.BF.1.1.1.c4"/>
+
+<!-- RadonX Changes -->
+  <!-- Device Dependencies -->
+  <project name="android_device_qcom_msm8974" path="device/qcom/msm8974" remote="par" revision="lollipop_bacon"/>
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="par" revision="lollipop_bacon">
+    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <project groups="device" name="paradox_device_oneplus_bacon" path="device/oneplus/bacon" remote="rnx" revision="lollipop_bacon"/>
+  <project groups="device" name="paradox_kernel_oneplus_msm8974" path="kernel/" remote="rnx" revision="lp-mr1"/>
+  <project groups="device" name="proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="par" revision="lollipop_bacon"/>
+  <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="lollipop_bacon"/>
+  <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="lollipop_bacon"/>
+  <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="lollipop_bacon"/>
+  <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-12.1"/>
+  <project name="CyanogenMod/android_external_libnfc-nci" path="external/libnfc-nci" remote="github" revision="cm-12.1"/>
+  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="par" revision="lollipop_msm8974"/>
+  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="par" revision="lollipop_msm8974" />
+  <project groups="qcom,default" name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="lollipop_msm8974"/>
+  <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="par" revision="lollipop_msm8974"/>
+  <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="par" revision="lollipop_msm8974"/>
+  
+  <!-- External Libraries -->
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-12.1" />
+  <project path="external/tar" name="external_tar" remote="rnx" revision="lp5.1" />
+  <project path="external/bluetooth/bluedroid" name="external_bluetooth_bluedroid" groups="pdk" remote="rnx" revision="lp-mr1" />
+
+   <!-- Apps -->
+  <project path="packages/apps/Settings" name="paradox_packages_apps_Settings" remote="rnx" revision="lp-mr1" />
+  <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="par" revision="lollipop_msm8974" />
+  <project name="android_packages_apps_Mms" path="packages/apps/Mms" remote="par" revision="lollipop_msm8974" />
+  <project name="SlimRoms/packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="lp5.1" />
+  <project path="packages/apps/Eargasm" name="xboxfanj/Music" remote="github" revision="lollipop-mr1" />
+  <project path="packages/apps/SnapdragonAudio" name="packages_apps_SnapdragonAudio" remote="rnx" revision="lp-mr1" />
+  <project path="packages/apps/Snap" name="xboxfanj/Snap" remote="github" revision="lollipop-mr1" />
+  <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="par" revision="lollipop_common" />
+  
+  <!-- Core Projects -->
+  <project path="build" name="paradox_build" remote="rnx" revision="lp-mr1" groups="pdk,tradefed" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="system/core" name="paradox_system_core" groups="pdk" remote="rnx" revision="lp-mr1" />
+  <project path="frameworks/base" name="paradox_frameworks_base" remote="rnx" revision="lp-mr1" groups="pdk-cw-fs" />
+  <project path="manifest" name="paradox_manifest" remote="rnx" revision="lollipop_bacon"/>
+  <project groups="pdk" name="paradox_art" remote="rnx" revision="lp-mr1" path="art"/>
+  <project path="bionic" name="paradox_bionic" remote="rnx" revision="lp-mr1"/>
+  <project path="frameworks/rs" name="frameworks_rs" remote="rnx" revision="lp-mr1" groups="pdk" />
+  <project groups="pdk-cw-fs" name="zyonee/android_frameworks_webview" remote="gh" revision="pac-5.1" path="frameworks/webview"/>
+ 
+  <!-- Vendors -->
+  <project path="vendor/rnx" name="paradox_vendor_rnx" remote="rnx" revision="lollipop"/>
+  <project path="vendor/snapdragon" name="vendor_snapdragon" remote="rnx" revision="lp-mr1" />
+  <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
+<!-- END RadonX Changes -->
+
   <project groups="pdk-cw-fs" name="device/common"/>
   <project name="kernel/lk" path="bootable/bootloader/lk"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
-  <project groups="pdk" name="platform/art" path="art"/>
   <project groups="pdk-cw-fs" name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
   <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts"/>
@@ -83,7 +136,6 @@
   <project groups="pdk-cw-fs" name="platform/external/arduino" path="external/arduino"/>
   <project groups="pdk" name="platform/external/bison" path="external/bison"/>
   <project groups="pdk-cw-fs" name="platform/external/blktrace" path="external/blktrace"/>
-  <project path="external/bluetooth/bluedroid" name="external_bluetooth_bluedroid" groups="pdk" remote="rnx" revision="lp-mr1" />
   <project groups="pdk" name="platform/external/bouncycastle" path="external/bouncycastle"/>
   <project name="platform/external/brctl" path="external/brctl"/>
   <project groups="pdk" name="platform/external/bsdiff" path="external/bsdiff"/>
@@ -334,10 +386,8 @@
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/widget" path="frameworks/opt/widget"/>
-  <project path="frameworks/rs" name="frameworks_rs" remote="rnx" revision="lp-mr1" groups="pdk" />
   <project groups="pdk-cw-fs" name="platform/frameworks/support" path="frameworks/support"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/volley" path="frameworks/volley"/>
-  <project groups="pdk-cw-fs" name="zyonee/android_frameworks_webview" remote="gh" revision="pac-5.1" path="frameworks/webview"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm"/>
   <project groups="pdk" name="platform/hardware/akm" path="hardware/akm"/>
   <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
@@ -477,67 +527,4 @@
   <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima"/>
   <project name="platform/vendor/qcom/msm8226" path="device/qcom/msm8226"/>
   <project name="platform/vendor/qcom/msm8610" path="device/qcom/msm8610"/>
-  <project path="vendor/snapdragon" name="vendor_snapdragon" remote="rnx" revision="lp-mr1" />
-  <project path="vendor/sm" name="SaberMod/android-vendor-sabermod.git" remote="gl" revision="master" />
-
-<!-- AOSParadox Stuff -->
-<!-- Bacon -->
-
-  <project name="android_device_qcom_msm8974" path="device/qcom/msm8974" remote="par" revision="lollipop_bacon"/>
-  <project name="android_device_qcom_common" path="device/qcom/common" remote="par" revision="lollipop_bacon">
-    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-  </project>
-
-  <project groups="device" name="paradox_device_oneplus_bacon" path="device/oneplus/bacon" remote="rnx" revision="lollipop_bacon"/>
-  <project groups="device" name="paradox_kernel_oneplus_msm8974" path="kernel/" remote="rnx" revision="lp-mr1"/>
-  <project groups="device" name="proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="par" revision="lollipop_bacon"/>
-
-  <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="lollipop_bacon"/>
-  <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="lollipop_bacon"/>
-  <project groups="pdk" name="android_hardware_ril" path="hardware/ril" remote="par" revision="lollipop_bacon"/>
-
-<!-- CyanogenMod Bacon Dependencies (we can't pass them) -->
-
-  <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="cm-12.1"/>
-  <project name="CyanogenMod/android_external_libnfc-nci" path="external/libnfc-nci" remote="github" revision="cm-12.1"/>
-
-<!-- QCOM MSM8974 -->
-
-  <project path="build" name="paradox_build" remote="rnx" revision="lp-mr1" groups="pdk,tradefed" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-
-  <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="par" revision="lollipop_msm8974"/>
-  <project path="system/core" name="android_system_core" groups="pdk" remote="par" revision="lollipop_msm8974" />
-
-  <project path="frameworks/base" name="paradox_frameworks_base" remote="rnx" revision="lp-mr1" groups="pdk-cw-fs" />
-
-  <project path="packages/apps/Settings" name="paradox_packages_apps_Settings" remote="rnx" revision="lp-mr1" />
-  <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="par" revision="lollipop_msm8974" />
-  <project name="android_packages_apps_Mms" path="packages/apps/Mms" remote="par" revision="lollipop_msm8974" />
-
-  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="par" revision="lollipop_msm8974" />
-
-
-  <project groups="qcom,default" name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="par" revision="lollipop_msm8974"/>
-  <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="par" revision="lollipop_msm8974"/>
-  <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="par" revision="lollipop_msm8974"/>
-  <project path="manifest" name="paradox_manifest" remote="rnx" revision="lollipop_bacon"/>
-
-<!-- Common -->
-
-  <project name="SlimRoms/packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="lp5.1" />
-  <project path="packages/apps/Eargasm" name="xboxfanj/Music" remote="github" revision="lollipop-mr1" />
-  <project path="packages/apps/SnapdragonAudio" name="packages_apps_SnapdragonAudio" remote="rnx" revision="lp-mr1" />
-  <project path="packages/apps/Snap" name="xboxfanj/Snap" remote="github" revision="lollipop-mr1" />
-  <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="par" revision="lollipop_common" />
-  <project path="bionic" name="paradox_bionic" remote="rnx" revision="lp-mr1"/>
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-12.1" />
-    
-<!-- AOSParadox Vendor -->
-
-  <project path="vendor/rnx" name="paradox_vendor_rnx" remote="rnx" revision="lollipop"/>
-
-
-<!-- END AOSParadox Stuff -->
 </manifest>
