@@ -118,11 +118,7 @@
   <project groups="cts,pdk-cw-fs" name="platform/cts" path="cts"/>
   <project groups="pdk-cw-fs" name="platform/dalvik" path="dalvik"/>
   <project groups="pdk" name="platform/developers/build" path="developers/build"/>
-  <project groups="pdk" name="platform/developers/demos" path="developers/demos"/>
-  <project groups="pdk" name="platform/developers/docs" path="developers/docs"/>
-  <project groups="pdk" name="platform/developers/samples/android" path="developers/samples/android"/>
   <project groups="pdk-cw-fs" name="platform/development" path="development"/>
-  <project groups="pdk" name="platform/docs/source.android.com" path="docs/source.android.com"/>
   <project groups="pdk" name="platform/external/aac" path="external/aac"/>
   <project groups="pdk-cw-fs" name="platform/external/android-clat" path="external/android-clat"/>
   <project groups="pdk-cw-fs" name="platform/external/ant-glob" path="external/ant-glob"/>
@@ -392,33 +388,13 @@
   <project groups="pdk" name="platform/hardware/akm" path="hardware/akm"/>
   <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
   <project groups="pdk" name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan"/>
-  <project groups="pdk" name="platform/hardware/intel/audio_media" path="hardware/intel/audio_media"/>
-  <project groups="pdk" name="platform/hardware/intel/bootstub" path="hardware/intel/bootstub"/>
-  <project groups="pdk" name="platform/hardware/intel/common/bd_prov" path="hardware/intel/common/bd_prov"/>
-  <project groups="pdk" name="platform/hardware/intel/common/libmix" path="hardware/intel/common/libmix"/>
-  <project groups="pdk" name="platform/hardware/intel/common/libstagefrighthw" path="hardware/intel/common/libstagefrighthw"/>
-  <project groups="pdk" name="platform/hardware/intel/common/libva" path="hardware/intel/common/libva"/>
-  <project groups="pdk" name="platform/hardware/intel/common/libwsbm" path="hardware/intel/common/libwsbm"/>
-  <project groups="pdk" name="platform/hardware/intel/common/omx-components" path="hardware/intel/common/omx-components"/>
-  <project groups="pdk" name="platform/hardware/intel/common/utils" path="hardware/intel/common/utils"/>
-  <project groups="pdk" name="platform/hardware/intel/common/wrs_omxil_core" path="hardware/intel/common/wrs_omxil_core"/>
-  <project groups="pdk" name="platform/hardware/intel/img/hwcomposer" path="hardware/intel/img/hwcomposer"/>
-  <project groups="pdk" name="platform/hardware/intel/img/libdrm" path="hardware/intel/img/libdrm"/>
-  <project groups="pdk" name="platform/hardware/intel/img/psb_headers" path="hardware/intel/img/psb_headers"/>
-  <project groups="pdk" name="platform/hardware/intel/img/psb_video" path="hardware/intel/img/psb_video"/>
   <project groups="pdk" name="platform/hardware/invensense" path="hardware/invensense"/>
   <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware"/>
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
-  <project groups="pdk" name="platform/hardware/nvidia/audio" path="hardware/nvidia/audio"/>
-  <project groups="pdk" name="platform/hardware/nvidia/tegra124" path="hardware/nvidia/tegra124"/>
   <project groups="qcom,default" name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="LA.BF.1.1.1.c4_1"/>
   <project groups="qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
   <project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
   <project groups="qcom,default" name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors"/>
-  <project groups="pdk" name="platform/hardware/samsung_slsi/exynos5" path="hardware/samsung_slsi/exynos5"/>
-  <project groups="pdk" name="platform/hardware/ti/omap3" path="hardware/ti/omap3"/>
-  <project groups="pdk" name="platform/hardware/ti/omap4-aah" path="hardware/ti/omap4-aah"/>
-  <project groups="pdk" name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx"/>
   <project groups="pdk" name="platform/libcore" path="libcore"/>
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project name="platform/ndk" path="ndk"/>
@@ -490,14 +466,10 @@
   <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse"/>
   <project groups="pdk" name="platform/prebuilts/eclipse-build-deps" path="prebuilts/eclipse-build-deps"/>
   <project groups="pdk" name="platform/prebuilts/eclipse-build-deps-sources" path="prebuilts/eclipse-build-deps-sources"/>
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"/>
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"/>
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="xanaxdroid/arm-eabi-4.9.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2" name="xanaxdroid/arm-eabi-5.2.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8"/>
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="xanaxdroid/arm-linux-androideabi-4.9.git" remote="bb" revision="sabermod" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="master" remote="aosp" groups="pdk,linux" />
-  <project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9"/>
   <project groups="pdk-cw-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin"/>
   <project groups="pdk-cw-fs" name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit"/>
   <project groups="pdk-cw-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android"/>
@@ -525,6 +497,4 @@
   <project name="platform/vendor/qcom-opensource/testframework" path="vendor/qcom/opensource/testframework"/>
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services"/>
   <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima"/>
-  <project name="platform/vendor/qcom/msm8226" path="device/qcom/msm8226"/>
-  <project name="platform/vendor/qcom/msm8610" path="device/qcom/msm8610"/>
 </manifest>
