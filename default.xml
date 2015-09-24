@@ -102,6 +102,7 @@
   <project path="bionic" name="paradox_bionic" remote="rnx" revision="lp-mr1"/>
   <project path="frameworks/rs" name="frameworks_rs" remote="rnx" revision="lp-mr1" groups="pdk" />
   <project groups="pdk-cw-fs" name="zyonee/android_frameworks_webview" remote="gh" revision="pac-5.1" path="frameworks/webview"/>
+  <project groups="pdk" name="paradox_libcore" path="libcore" remote="rnx" revision="lp-mr1" />
  
   <!-- Vendors -->
   <project path="vendor/rnx" name="paradox_vendor_rnx" remote="rnx" revision="lollipop"/>
@@ -394,7 +395,6 @@
   <project groups="qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
   <project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
   <project groups="qcom,default" name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors"/>
-  <project groups="pdk" name="platform/libcore" path="libcore"/>
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project name="platform/ndk" path="ndk"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
