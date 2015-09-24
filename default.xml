@@ -101,7 +101,7 @@
   <project groups="pdk" name="paradox_art" remote="rnx" revision="lp-mr1" path="art"/>
   <project path="bionic" name="paradox_bionic" remote="rnx" revision="lp-mr1"/>
   <project path="frameworks/rs" name="frameworks_rs" remote="rnx" revision="lp-mr1" groups="pdk" />
-  <project groups="pdk-cw-fs" name="teamhorizon/android_frameworks_webview" remote="gh" revision="lp-mr1" path="frameworks/webview"/>
+  <project groups="pdk-cw-fs" name="teamhorizon/platform_frameworks_webview" remote="gh" revision="lp-mr1" path="frameworks/webview"/>
   <project groups="pdk" name="paradox_libcore" path="libcore" remote="rnx" revision="lp-mr1" />
  
   <!-- Vendors -->
