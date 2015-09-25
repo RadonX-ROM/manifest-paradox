@@ -90,6 +90,7 @@
   <project path="packages/apps/Eargasm" name="xboxfanj/Music" remote="github" revision="lollipop-mr1" />
   <project path="packages/apps/SnapdragonAudio" name="packages_apps_SnapdragonAudio" remote="rnx" revision="lp-mr1" />
   <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="par" revision="lollipop_common" />
+  <project path="packages/apps/RadonOTA" name="packages_apps_RadonOTA" remote="rnx" revision="lp-mr1" />
   
   <!-- Core Projects -->
   <project path="build" name="paradox_build" remote="rnx" revision="lp-mr1" groups="pdk,tradefed" >
