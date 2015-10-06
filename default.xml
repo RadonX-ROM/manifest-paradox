@@ -105,6 +105,7 @@
   <project path="frameworks/rs" name="frameworks_rs" remote="rnx" revision="lp-mr1" groups="pdk" />
   <project groups="pdk-cw-fs" name="teamhorizon/platform_frameworks_webview" remote="gh" revision="lp-mr1" path="frameworks/webview"/>
   <project groups="pdk" name="paradox_libcore" path="libcore" remote="rnx" revision="lp-mr1" />
+  <project groups="pdk" name="paradox_frameworks_native" path="frameworks/native" remote="rnx" revision="lp-mr1" />
  
   <!-- Vendors -->
   <project path="vendor/rnx" name="paradox_vendor_rnx" remote="rnx" revision="lollipop"/>
@@ -363,7 +364,6 @@
   <project groups="pdk-cw-fs" name="platform/frameworks/minikin" path="frameworks/minikin"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/ml" path="frameworks/ml"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/multidex" path="frameworks/multidex"/>
-  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native"/>
   <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar"/>
