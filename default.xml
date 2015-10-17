@@ -55,7 +55,7 @@
            sync-j="4"
 	   fetch="https://github.com/TeamHorizon/" />
 
-  <default remote="caf" revision="LA.BF.1.1.1.c4"/>
+  <default remote="caf" revision="LA.BF.1.1.1.c4-04500-8x74.0.xml"/>
 
 <!-- RadonX Changes -->
   <!-- Device Dependencies -->
