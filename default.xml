@@ -489,11 +489,11 @@
   <project groups="tools" name="platform/tools/external/fat32lib" path="tools/external/fat32lib"/>
   <project groups="tools" name="platform/tools/external/gradle" path="tools/external/gradle"/>
   <project groups="pdk" name="platform/tools/swt" path="tools/swt"/>
-  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm"/>
-  <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm"/>
-  <project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests"/>
-  <project name="platform/vendor/qcom-opensource/stm-log" path="vendor/qcom/opensource/stm-log"/>
-  <project name="platform/vendor/qcom-opensource/testframework" path="vendor/qcom/opensource/testframework"/>
-  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services"/>
-  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima"/>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="LA.BF.1.1.1.c4"/>
+  <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" revision="LA.BF.1.1.1.c4"/>
+  <project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests" revision="LA.BF.1.1.1.c4"/>
+  <project name="platform/vendor/qcom-opensource/stm-log" path="vendor/qcom/opensource/stm-log" revision="LA.BF.1.1.1.c4"/>
+  <project name="platform/vendor/qcom-opensource/testframework" path="vendor/qcom/opensource/testframework" revision="LA.BF.1.1.1.c4"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="LA.BF.1.1.1.c4"/>
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="LA.BF.1.1.1.c4"/>
 </manifest>
