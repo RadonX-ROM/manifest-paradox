@@ -82,6 +82,7 @@
   <project path="external/tar" name="external_tar" remote="rnx" revision="L51" />
   <project path="external/bluetooth/bluedroid" name="external_bluetooth_bluedroid" groups="pdk" remote="rnx" revision="lp-mr1" />
   <project path="external/android-visualizer" name="SlimRoms/android_external_android-visualizer" remote="github" revision="lp5.1" />
+  <project groups="pdk-java" name="benzorom/external_proguard" path="external/proguard" remote="github" revision="marshmallow"/>
 
   <!-- Apps -->
   <project path="packages/apps/Settings" name="paradox_packages_apps_Settings" remote="rnx" revision="lp-mr1" />
@@ -313,7 +314,6 @@
   <project name="platform/external/pdfium" path="external/pdfium"/>
   <project groups="pdk-cw-fs" name="platform/external/pixman" path="external/pixman"/>
   <project groups="pdk-cw-fs" name="platform/external/ppp" path="external/ppp"/>
-  <project groups="pdk-java" name="platform/external/proguard" path="external/proguard"/>
   <project groups="pdk" name="platform/external/protobuf" path="external/protobuf"/>
   <project name="platform/external/protobuf-c" path="external/protobuf-c"/>
   <project groups="pdk-cw-fs" name="platform/external/qemu" path="external/qemu"/>
